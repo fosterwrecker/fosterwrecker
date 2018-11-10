@@ -1,0 +1,255 @@
+body {
+    background-image: url(metal.jpg);
+	margin: 0;
+	
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color:lightgray;
+	background-attachment: fixed;
+}
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.header {
+	text-align: center;
+	color: firebrick;
+}
+.cars {
+	margin-bottom: 50px;
+}
+
+/*Navigation menu links*/
+.sidenav a {
+	text-decoration: none;
+	font-size: 27px;
+	display: block;
+	font-weight: none;
+}
+
+
+
+.menubutton {
+font-size: 30px;
+background-color: transparent;
+border: 0;
+left: 0;
+}
+
+
+/*Dealing with smaller screens*/
+@media only screen and (max-width: 700px) {
+	.main {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	
+	.sidenav {
+	display: none;
+	position: absolute;
+    width: 100%;
+    margin: 0;
+	background-color: gray;
+}
+  .footer {
+	  width: 100%;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	  margin: 0;
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+  }
+  
+  ul.centered {
+	  text-align: center;
+	  list-style-type: none;
+	  padding-left: 0;
+  }
+  li.nav {
+	  padding: 0px;
+	  width: 100%;
+  }
+
+.small {
+	font-size: 2.8vw;
+}
+.medium {
+	font-size: 1.3vw;
+}
+.large {
+    font-size: 3.7vw;
+}
+.xlarge {
+	font-size: 6.7vw;
+}
+.xxlarge {
+    font-size: 8.9vw;
+}
+}
+
+/*End Small Screens*/
+
+
+/*Dealing with larger screens*/
+@media only screen and (min-width: 701px) {
+	
+
+	.main {
+		margin-right: 15%;
+		margin-left: 15%;
+		min-height: 100vh;
+		overflow: hidden;
+		display: block;
+		position:relative;
+		padding-bottom: .6rem;
+	}
+	.menubuttoncontainer {
+		display: none;
+	}
+	
+	.sticky {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 0;
+	}
+
+	/*Sidebar Menu*/
+	.sidenav {
+		height: auto;
+		background-color: firebrick;
+		
+	}
+	.footer {
+		width: 100%;
+		padding: .6rem;
+		margin: 0;
+		text-align: center;
+		color: white;
+		background-color: black;
+		position: fixed;
+		bottom: 0;
+		
+	}
+	ul.centered {
+		text-align: center;
+		list-style-type: none;
+		padding-left: 0;
+	}
+	li.nav {
+		padding: 0px;
+		width: 200px;
+	}
+
+.small {
+	font-size: 1.2vw;
+}
+.medium {
+	font-size: 1.3vw;
+}
+.large {
+    font-size: 1.6vw;
+}
+.xlarge {
+	font-size: 2.7vw;
+}
+.xxlarge {
+    font-size: 3.8vw;
+}
+
+}
+
+
+/*End of larger screens*/
+
+.blog {
+	margin-bottom: 35px;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
+
+
+/*Colors*/
+
+.white {
+	color: white;
+}
+.black {
+	color: black;
+}
+.red {
+    color: red;
+}
+.firebrick {
+	color: firebrick;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.brown {
+    color: brown;
+}
+
+/*bold*/
+
+.bold {
+    font-weight: 600;
+}
+.lightbold {
+    font-weight: 300;
+}
+
+
+
+.phonenumber {
+	font-size: 27px;
+}
+
+
+
+.bigline {
+	line-height: 1.4;
+}
+p.background {
+	background-color: black;
+}
+
+img {
+    margin: 10px;
+}
+
+/* link color */
+a{
+	color: white;
+}
+
+/* mouse over link */
+a:hover{
+	color:lightblue;
+}
+a:link{
+	text-decoration: none;
+}
+a:active{
+    top:2px;
+}

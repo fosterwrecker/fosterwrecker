@@ -1,0 +1,203 @@
+body{
+	background-image: url("plain.png");
+	/* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color:lightgray;
+	background-attachment: fixed;
+	margin-right: 13%;
+	margin-left: 220px;
+	}
+
+
+
+/*Navigation menu links*/
+.sidenav a {
+	text-decoration: none;
+	font-size: 27px;
+	display: block;
+	font-weight: none;
+}
+
+.menubutton {
+font-size: 30px;
+z-index: 10;
+background-color: transparent;
+border: 0;
+}
+
+
+/*Dealing with smaller screens*/
+@media screen and (max-width: 700px) {
+  .sidenav {
+	display: none;
+	position: relative;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+	background-color: gray;
+	
+		
+	
+
+  }
+  body {
+	  margin-left: 5%;
+	  margin-right: 5%;
+  }
+  
+
+  .closebtncontainer {
+    display: block;
+  }
+  .closebtn {
+	  position:fixed;
+	  top: 15px;
+	  right: 15px;
+	  font-size: 40px;
+	  color: white;
+	  background-color: blue;
+	  border: 0px;
+  }
+ 
+
+}
+
+/*Dealing with larger screens*/
+@media only screen and (min-width: 701px) {
+	.menubuttoncontainer {
+		display: none;
+	}
+	.closebtncontainer {
+		display: none;
+	}
+	/*Sidebar Menu*/
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed; /*Stay in place on scroll*/
+	z-index: 1; /*Stay on top*/
+	top: 0; /*Stay at top */
+	left: 0;
+	background-color: lightblue;
+	overflow-x: hidden; /*Disable horizontal scroll*/
+}
+body.minorprophets {
+	background-image: url("minor_prophets_picture2.jpg");
+	height: 100%;
+	
+	}
+}
+
+ul.centered {
+	text-align: center;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+   font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+   font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+   font-family: Florence, cursive;
+}
+p.fantasy {
+   font-family: Blippo, fantasy;
+}
+ul.sansserif {
+	font-family: Helvetica, Arial, sans-serif;
+}
+p.small {
+   font-size: small;
+}
+p.medium {
+   font-size: medium;
+}
+p.large {
+   font-size: large;
+}
+p.xlarge {
+   font-size: x-large;
+}
+p.xxlarge {
+	font-size: 40px;
+}
+p.green {
+	color: green;
+}
+p.red {
+	color: red;
+}
+p.orange {
+	color: orange;
+}
+p.blue {
+	color: blue;
+}
+p.white {
+	color: white;
+}
+p.black {
+	color: black;
+}
+p.yellow {
+	color: yellow;
+}
+ul.large {
+	font-size: large;
+}
+ul.xlarge {
+	font-size: x-large;
+}
+body.large {
+	font-size: large;
+}
+.center {
+	text-align: center;
+}
+/* link color */
+a{
+	color:darkred;
+	position: relative;
+}
+/* mouse over link */
+a:hover{
+	color:firebrick;
+}
+a:link{
+	text-decoration: none;
+}
+a:active{
+	top:2px;
+}
+/* indenting paragraphs */
+p.indent{
+	text-indent: 30px;
+}
+ul.circle{
+	list-style-type: circle;
+	list-style-position: outside;
+}
+h2 {
+	font-size: 30px;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+img.bio {
+	margin-bottom: 50px;
+}
