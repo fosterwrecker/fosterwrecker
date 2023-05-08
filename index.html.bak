@@ -122,7 +122,12 @@
             
 				
 
-        <div class="fb-like" data-href="https://www.facebook.com/Fosterwreckerservice/" data-width="3000" data-layout="" data-action="" data-size="" data-share="true"></div>
+        <p align="center">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FFosterwreckerservice%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=false&height=35&appId" 
+        width="230" height="35" style="border:none;overflow:hidden; align-items: center" scrolling="no" 
+        frameborder="0" allowTransparency="true" allow="encrypted-media">
+        </iframe>
+        </p>
 		
 		
         <!--Google review-->
@@ -144,7 +149,7 @@
 
 
 <div class="flex-container wrap"><p align="rightwards">
-    <img src="3trucks.jpg"; width="600px"; height="200px"; border="1px"/> &emsp;
+    <img src="3 trucks.jpg"; width="600px"; height="200px"; border="1px"/> &emsp;
 	</p></p>
 </div>
 
