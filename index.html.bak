@@ -41,13 +41,7 @@
         
     <!--Load Facebook SDK for JavaScript-->
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
-         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=99412322469&autoLogAppEvents=1" nonce="yKyAecnm"></script>
 
     <!-- Side Navigation -->
 
@@ -106,7 +100,7 @@
 		
 		
 		When you need a car towed, we have professional employees and equipment to handle several varieties of vehicles. 
-		We serve Birmingham and the surrounding metro area, with over 40 years of experience.		
+		We serve Birmingham and the surrounding metro area, with decades of experience.		
 		<a href="tel:205-854-4646" class="serif firebrick"><strong>Call us today!</strong></a> 
 				
 		<br><br>
