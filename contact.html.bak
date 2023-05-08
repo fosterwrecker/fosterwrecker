@@ -16,7 +16,7 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <title>
-    Birmingham Towing
+    Foster Wrecker Service
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="foster2.css">
@@ -25,17 +25,10 @@
 <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<meta name="keywords" id="page-keywords" content="wrecker, towing, weil, abc towing, roadside 
-    assistance, towing near me, " data-dynamic-entity="3" />
-<meta name="description" id="page-description" content=" We are available 24/7 for roadside 
-    assistance, and light or medium duty towing. Foster Wrecker provides services for Birmingham, 
-    Trussville, Center Point and surrounding areas. We have professional employees and equipment to 
-    handle several varieties of vehicles. Foster Wrecker operates local and long distance. See our 
-    Services page for a complete list of all we can do for you!" data-dynamic-entity="3" />
 </head>
 <body>
 
@@ -59,71 +52,49 @@
         <hr/>
         <li class="nav"><a href="blog.html">Blog</a>
         <hr/>
-		<li class="nav"><a href="cars_for_sale.html">Cars for Sale</a>
+		<li class="nav"><a href="terms.html">Terms and Conditions</a>
+		<hr/>
+		<li class="nav"><a href="covid19.HTML">COVID19</a>
 		<hr/>
 		<li class="nav"><a href="https://www.indeed.com/viewjob?cmp=Foster-Wrecker-Service&t=Tow+Truck+Driver&jk=8eb0175914c1d3b4&sjdu=QwrRXKrqZ3CNX5W-O9jEvd2UztVVgbVp93W3RJ3rbhFZAlflVsSFG8cmmpZiOEZRXq3wW8HNET7r5UdWBWHeag&tk=1fb5da652n57q800&adid=369137341&ad=-6NYlbfkN0C42M5LY1OUTsrLaymzzLm1PWPY7Zpxi2TSd_q0DdNI6aLYQfIJNJeNR0SA_RvvmhEmvCC-bT7mXV2NsnhcqMSvT_4BafITrwHMfvuEPlU7P1-pSYfReGGhFGDRRUf6UZHu0Si97MsAbwtOtWXJfKfxzdnbB53j6vEFeoY_i7j8hx5z-9A862lnV-Gm0U-N_23LFvTbda4upmmX8HNpTevNMw3B4mn4-wjVx3zxflUy4e-3pbxoKq0afVxOlbbzshkJzLFNCS4uWukVehRUEUotUEq23V3SAWyODUa_fm-MNDTOpWg1JVt9uZ3CIKMYVCpjv39V6LHs9Uoww0HyTCDfYkMaBQmS30XHk1g7LFM4SIVbV2MM6kFVJnfUCcvO__U%3D&pub=4a1b367933fd867b19b072952f68dceb&vjs=3" >Careers</a>
 		<hr/>
         <li class="white phonenumber">(205) 854-4646</li>
         <hr/>
-		<li class="nav"><a href="terms.html">Terms and Conditions</a>
-		<hr/>
 		<a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" >Get Directions</a>
 		<hr/>
         </ul>
         </div>
 
-    <div class="main">
+        <div class="main">
 
-	<p class="serif xlarge center firebrick"><strong>Foster's Cars for Sale</strong></p>
-	<br>
+            <div class="header bold xlarge bigline">Foster Wrecker Service  <br>
+			28 22ND AVE. N.W. <br>Birmingham, AL 35215 <br> (205) 854-4646</div><br>
+            
+            <div class="flex-container wrap">
 
-   <div class="flex-container wrap">
 
-        
+            <div>                
+               <p class="large">
+                    Feel free to call us at any time with any questions or concerns.  If you would 
+					prefer to send us an email, you can do so in the form below and we will 
+					respond to you as soon as possible.
+                </p>
+            </div>
+			
 		
-	<div class="serif small center"> <strong>1982 Fiero &emsp; 
-	$Price</strong> <br>descriptionline1 <br>descriptionline2	
-	<br><br>
-	<img class="cars" src="car1.jpg" width="360px" height="270px" border="1px"
-	alt="Car for sale"/></div>
-
-
-
-	<div class="serif small center"> <strong>1965 Mustang &emsp; 
-	$8,200</strong>	<br>Been driven all over town <br> Previous owner was flat-footed
-	<br><br>
-	<img class="cars" src="car2.jpg" width="360px" height="270px" border="1px">
+			
+    </div>
+	<iframe scrolling="no" src="https://nameless-tundra-18779.herokuapp.com/form" style="width:100%; height:100vh; border:none">
+	</iframe>
 	</div>
+    </div> <!--End flex-container-->
 
-
-
-	<div class="serif small center"> <strong>1962 Chevy 409 &emsp; 
-	$12,600</strong> <br>Four speed dual quad posi-traction <br> Really shines at the track
-	<br><br>
-	<img src="car3.jpg" class="cars" width="360px" height="270px" border="1px"></div>
-
-
-
-
-
-<script src="https://googlereviews.cws.net/google-reviews.js"></script><br />
-            <script>load_google_reviews("ChIJiyN1vMEOiYgRg8S0PQ-V7HE");</script>
-
-
-
-
-
-
-</div> <!--End flex-container-->
-</div> <!--End main-->
-</div> <!--End flex-container-->
-
-<div style="padding: 15px">
-</div>
+    <div style="padding: 15px">
+    </div>
  <p align="center">
 		<img src="Wrecker Logo Small.png">  </p>
-<div class="footer">
-        Copyright © 2020 Foster Wrecker Service LLC
-</div>
-</body>
-</html>
+    <div class="footer">
+            Copyright © 2020 Foster Wrecker Service LLC
+    </div>
+    </body>
+    </html>
