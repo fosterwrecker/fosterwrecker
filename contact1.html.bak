@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
   <style>
     body {
-      background-image: url("3 trucks.jpg");
+      background-image: url("3-trucks.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       color: white; /* Set default text color to white */
@@ -22,13 +22,16 @@
       text-align: center;
       background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
     }
+    nav {
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for navigation */
+      padding: 10px;
+    }
     .nav {
+      display: flex;
+      justify-content: center;
       list-style-type: none;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for navigation */
     }
     .nav li {
       padding: 10px;
@@ -36,8 +39,8 @@
     .nav a {
       color: white;
       text-decoration: none;
-      transition: background-color 0.3s ease; /* Smooth transition for background color */
       padding: 10px 20px; /* Add padding to the navigation links */
+      transition: background-color 0.3s ease; /* Smooth transition for background color */
     }
     .nav a:hover {
       background-color: #555; /* Darker background color on hover */
@@ -77,7 +80,7 @@
 <body>
   <header>
     <h1><span class="red-text">Foster Wrecker Service</span></h1>
-	<h1><span class="red-text">205-854-4646</span></h1>
+    <h2><span class="red-text">205-854-4646</span></h2>
     <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -86,33 +89,35 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="terms.html">Terms and Conditions</a></li>
-		<li><a href="terms.html"><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
-      target="_blank" class="serif xlarge center firebrick">Click for Directions</a> </a></li>
+        <li><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
+               target="_blank" class="serif xlarge center firebrick">Click for Directions</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <section id="hero">
-      <h2>Reliable Towing and Recovery Services</h2>
-	  
-      <p>
-        When you need a car towed, we have professional employees and equipment to handle several varieties of vehicles. 
-        We serve Birmingham and the surrounding metro area, with decades of experience.
-        <a href="tel:205-854-4646" class="serif firebrick"> <br><strong>Call us NOW!</strong></a> 
-        <br><br>
-        Foster Wrecker Service provides towing, roadside assistance, and wrecker services for Birmingham, Trussville, Center 
-        Point, and surrounding areas. Foster Wrecker Service operates towing services locally and long distance. See our 
-        <a href="services.html" class="serif firebrick"><strong>services page</strong></a> for a complete list of all we can do for you!
-      </p>
-    </section>
-    
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>For immediate assistance or to schedule a tow, please contact us:</p>
-      <p>Phone: 205-854-4646</p>
-      <p>Email: dispatch@fosterwrecker.com</p>
-    </section>
+
+<html>
+<head> 
+  <title>Contact Form</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="send_email.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea><br>
+
+    <input type="submit" value="Send Message">
+  </form>
+</body>
+</html>
+
   </main>
   
   <footer>

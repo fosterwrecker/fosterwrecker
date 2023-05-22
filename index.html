@@ -10,21 +10,24 @@
       background-image: url("3-trucks.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      color: white; /* Set default text color to white */
-      font-family: Arial, sans-serif; /* Specify a font for better readability */
-      margin: 0; /* Remove default margin for better alignment */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0; /* Add padding to the body to avoid content touching the edges */
     }
-    .red-text {
-      color: red;
-    }
+    
+    /* Adjust header styles for better mobile display */
     header {
       padding: 20px;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+      background-color: rgba(0, 0, 0, 0.8);
     }
+    
+    /* Adjust navigation styles for better mobile display */
     nav {
-      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for navigation */
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 10px;
+      overflow: auto; /* Add overflow property to enable horizontal scrolling for mobile navigation */
     }
     .nav {
       display: flex;
@@ -39,28 +42,35 @@
     .nav a {
       color: white;
       text-decoration: none;
-      padding: 10px 20px; /* Add padding to the navigation links */
-      transition: background-color 0.3s ease; /* Smooth transition for background color */
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
     }
     .nav a:hover {
-      background-color: #555; /* Darker background color on hover */
+      background-color: #555;
     }
+    
+    /* Adjust hero section styles for better mobile display */
     #hero {
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for hero section */
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
       text-align: center;
+      margin-bottom: 20px; /* Add margin-bottom to create space between sections */
     }
+    
+    /* Adjust contact section styles for better mobile display */
     #contact {
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for contact section */
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
       text-align: center;
+      margin-bottom: 20px; /* Add margin-bottom to create space between sections */
     }
+    
     footer {
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for footer */
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 20px;
       text-align: center;
-      color: #bbb; /* Lighter text color for the footer */
-      font-size: 14px; /* Smaller font size for the footer text */
+      color: #bbb;
+      font-size: 14px;
     }
     footer p {
       margin: 0;
@@ -73,7 +83,32 @@
     .footer-images img {
       width: 100px;
       margin: 0 10px;
-      opacity: 0.8; /* Reduce image opacity for a subtle effect */
+      opacity: 0.8;
+    }
+    
+    /* Add media query to adjust styles for smaller screens */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px; /* Decrease font size for better readability on smaller screens */
+      }
+      header h2 {
+        font-size: 18px; /* Decrease font size for better readability on smaller screens */
+      }
+      .nav {
+        overflow-x: auto; /* Enable horizontal scrolling for navigation on smaller screens */
+      }
+      .nav li {
+        white-space: nowrap; /* Prevent navigation items from wrapping on smaller screens */
+      }
+      .nav a {
+        padding: 10px 12px; /* Adjust padding for navigation links on smaller screens */
+      }
+      #hero h2 {
+        font-size: 18px; /* Decrease font size for better readability on smaller screens */
+      }
+      #hero p {
+        font-size: 14px; /* Decrease font size for better readability on smaller screens */
+      }
     }
   </style>
 </head>
@@ -114,7 +149,7 @@
       <h2>Contact Us</h2>
       <p>For immediate assistance or to schedule a tow, please contact us:</p>
       <p>Phone: 205-854-4646</p>
-      <p>Email: dispatch@fosterwrecker.com</p>
+   
     </section>
   </main>
   
