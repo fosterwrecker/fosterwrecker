@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  background-image: url("3-trucks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Add padding to the body to avoid content touching the edges */
+}
+
+.red-text {
+  color: red;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.firebrick {
+  color: firebrick;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  overflow: auto; /* Add overflow property to enable horizontal scrolling for mobile navigation */
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+}
+
+#hero h2 {
+  font-size: 30px;
+}
+
+#hero p {
+  font-size: 18px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-images img {
+  width: 100px;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  .nav {
+    overflow-x: auto;
+  }
+
+  .nav li {
+    white-space: nowrap;
+  }
+
+  .nav a {
+    padding: 10px 12px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+}
