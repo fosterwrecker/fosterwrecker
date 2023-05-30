@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="styles.css">
+
   <title>Foster Wrecker Service</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,27 +89,27 @@
     }
     
     /* Add media query to adjust styles for smaller screens */
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      header {
+        padding: 10px;
+      }
+      nav {
+        padding: 5px;
+      }
       header h1 {
-        font-size: 24px; /* Decrease font size for better readability on smaller screens */
+        font-size: 24px;
       }
       header h2 {
-        font-size: 18px; /* Decrease font size for better readability on smaller screens */
-      }
-      .nav {
-        overflow-x: auto; /* Enable horizontal scrolling for navigation on smaller screens */
-      }
-      .nav li {
-        white-space: nowrap; /* Prevent navigation items from wrapping on smaller screens */
+        font-size: 18px;
       }
       .nav a {
-        padding: 10px 12px; /* Adjust padding for navigation links on smaller screens */
+        padding: 10px 12px;
       }
       #hero h2 {
-        font-size: 18px; /* Decrease font size for better readability on smaller screens */
+        font-size: 18px;
       }
       #hero p {
-        font-size: 14px; /* Decrease font size for better readability on smaller screens */
+        font-size: 14px;
       }
     }
   </style>
@@ -143,14 +145,12 @@
         <a href="services.html" class="serif firebrick"><strong>services page</strong></a> for a complete list of all we can do for you!
       </p>
       <a href="tel:205-854-4646" class="serif firebrick"><strong>Call us NOW!</strong></a>
-    
-    
-    <section id="contact">
+    </section
+    section id="contact">
       <h2>Contact Us</h2>
       <p>For immediate assistance or to schedule a tow, please contact us:</p>
       <p>Phone: 205-854-4646</p>
-   
-   
+    </section>
   </main>
   
   <footer>
