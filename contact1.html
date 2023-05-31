@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foster Wrecker Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+  <style>
+    body {
+      background-image: url("3-trucks.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white; /* Set default text color to white */
+      font-family: Arial, sans-serif; /* Specify a font for better readability */
+      margin: 0; /* Remove default margin for better alignment */
+    }
+    .red-text {
+      color: red;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for navigation */
+      padding: 10px;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav li {
+      padding: 10px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px; /* Add padding to the navigation links */
+      transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+    .nav a:hover {
+      background-color: #555; /* Darker background color on hover */
+    }
+    #hero {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for hero section */
+      padding: 20px;
+      text-align: center;
+    }
+    #contact {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for contact section */
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for footer */
+      padding: 20px;
+      text-align: center;
+      color: #bbb; /* Lighter text color for the footer */
+      font-size: 14px; /* Smaller font size for the footer text */
+    }
+    footer p {
+      margin: 0;
+    }
+    .footer-images {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .footer-images img {
+      width: 100px;
+      margin: 0 10px;
+      opacity: 0.8; /* Reduce image opacity for a subtle effect */
+    }
+    .contact-form {
+      margin: 50px auto;
+      max-width: 400px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+    }
+    .contact-form h1 {
+      color: white;
+      text-align: center;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: none;
+    }
+    .contact-form textarea {
+      height: 120px;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="red-text">Foster Wrecker Service</span></h1>
+    <h2><span class="red-text">205-854-4646</span></h2>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mission_statement.html">Mission Statement</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+        <li><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
+               target="_blank" class="serif xlarge center firebrick">Click for Directions</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form action="send_email.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Foster Wrecker Service. All rights reserved.</p>
+    <div class="footer-images">
+      <img src="NTL_Logo.jpg" alt="Image 1">
+      <img src="Wrecker Logo1.png" alt="Image 2">
+      <img src="reviews.jpg" alt="Image 3">
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,135 +1,223 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<title>
-    Foster Wrecker Service
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="foster2.css">
-<script type="text/javascript" src="scripts.js"></script> 
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+<title>Foster Wrecker Service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+<style>
+body {
+  background-image: url("3-trucks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Add padding to the body to avoid content touching the edges */
+}
+
+/* Adjust header styles for better mobile display */
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adjust navigation styles for better mobile display */
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  overflow: auto; /* Add overflow property to enable horizontal scrolling for mobile navigation */
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
+/* Adjust hero section styles for better mobile display */
+#hero {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+}
+
+/* Adjust contact section styles for better mobile display */
+#contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-images img {
+  width: 100px;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+/* Add media query to adjust styles for smaller screens */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Decrease font size for better readability on smaller screens */
+  }
+  header h2 {
+    font-size: 18px; /* Decrease font size for better readability on smaller screens */
+  }
+  .nav {
+    overflow-x: auto; /* Enable horizontal scrolling for navigation on smaller screens */
+  }
+  .nav li {
+    white-space: nowrap; /* Prevent navigation items from wrapping on smaller screens */
+  }
+  .nav a {
+    padding: 10px 12px; /* Adjust padding for navigation links on smaller screens */
+  }
+  #hero h2 {
+    font-size: 18px; /* Decrease font size for better readability on smaller screens */
+  }
+  #hero p {
+    font-size: 14px; /* Decrease font size for better readability on smaller screens */
+  }
+}
+</style>
 </head>
 <body>
+<header>
+  <h1><span class="red-text">Foster Wrecker Service</span></h1>
+  <h2><span class="red-text">205-854-4646</span></h2>
+  <h3><span class="red-text"><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
+             target="_blank" class="serif xlarge center firebrick">Click for Directions</a></span></h3>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="mission_statement.html">Mission Statement</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="terms.html">Terms and Conditions</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Side Navigation -->
-
-<div class="menubuttoncontainer">
-    <button class="menubutton" onclick="toggleNavbar();">&#9776;</button>
-</div>
-
-<div class="flex-container">
-
-    <div class="sidenav" id="navbar">
-        <ul class="centered sticky">
-        <li class="nav"><a href="index.html">Home</a>
-        <hr/>
-        <li class="nav"><a href="services.html">Services</a>
-        <hr/>
-        <li class="nav"><a href="mission_statement.html">Mission Statement</a>
-        <hr/>
-        <li class="nav"><a href="contact.html">Contact</a>
-        <hr/>
-        <li class="nav"><a href="blog.html">Blog</a>
-        <hr/>
-		<li class="nav"><a href="terms.html">Terms and Conditions</a>
-		<hr/>
-		<li class="nav"><a href="https://www.indeed.com/viewjob?cmp=Foster-Wrecker-Service&t=Tow+Truck+Driver&jk=8eb0175914c1d3b4&sjdu=QwrRXKrqZ3CNX5W-O9jEvd2UztVVgbVp93W3RJ3rbhFZAlflVsSFG8cmmpZiOEZRXq3wW8HNET7r5UdWBWHeag&tk=1fb5da652n57q800&adid=369137341&ad=-6NYlbfkN0C42M5LY1OUTsrLaymzzLm1PWPY7Zpxi2TSd_q0DdNI6aLYQfIJNJeNR0SA_RvvmhEmvCC-bT7mXV2NsnhcqMSvT_4BafITrwHMfvuEPlU7P1-pSYfReGGhFGDRRUf6UZHu0Si97MsAbwtOtWXJfKfxzdnbB53j6vEFeoY_i7j8hx5z-9A862lnV-Gm0U-N_23LFvTbda4upmmX8HNpTevNMw3B4mn4-wjVx3zxflUy4e-3pbxoKq0afVxOlbbzshkJzLFNCS4uWukVehRUEUotUEq23V3SAWyODUa_fm-MNDTOpWg1JVt9uZ3CIKMYVCpjv39V6LHs9Uoww0HyTCDfYkMaBQmS30XHk1g7LFM4SIVbV2MM6kFVJnfUCcvO__U%3D&pub=4a1b367933fd867b19b072952f68dceb&vjs=3" >Careers</a>
-		<hr/>
-        <li class="white phonenumber">(205) 854-4646</li>
-        <hr/>
-		<a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" >Get Directions</a>
-		<hr/>
-        </ul>
-        </div>
-
-    <div class="main">
-
-    <div class="header bold xxlarge">Term and Conditions</div>
-    
-    <br>
-    
-    <div class="large big justify">
-       <p class="center xlarge"><strong>Attention</strong></p> <br>
-	   Not responsible for any lost or damaged property. 
-Storage is a minimum of $40 per day.
-In order to remove items from the vehicle, YOU must provide proof of ownership.
-A release form from the Sheriff’s department or department responsible for impound is required for all impounded vehicles to remove any items.
-Office hours for impounded vehicles are Monday-Friday, 8-5, barring holidays.
-We can only accept cash for impounded vehicles.
-<br><br>
+<main>
+  <section id="hero">
+    <h2>Terms and legal information</h2>
+    <p>
+	<br><br>
+	
+	<p class="center xlarge"><strong>Attention</strong></p> <br>
+	
+	
+      Disclaimer: We are not liable for any lost or damaged property. Please be advised that storage fees amount to a minimum of 
+	  $50 per day. For the removal of items from your vehicle, it is mandatory to furnish valid proof of ownership. To retrieve 
+	  any belongings from impounded vehicles, a release form issued by the Sheriff's Department or the relevant impound authority 
+	  is mandatory. Kindly note that our office hours for impounded vehicles are Monday to Friday, 8 AM to 5 PM, excluding holidays. 
+	  Please be aware that we can only accept cash payments for impounded vehicles.
+      <br><br>
+	  
+	  	
+	  
+	  
+	  <br><br>
 <p class="center xlarge"><strong>Unlock Policy</strong></p> <br>
-You understand that Foster Wrecker Service will exercise usual and ordinary care in attempting to open vehicle. You also understand that manufacturers 
-design and construct vehicles to guard against entry without a key. As such, you understand that it is possible to damage glass, rubber, paint, wiring, 
-the locking mechanism, and or other mechanisms or devices while attempting to attain entry without the use of a key. You agree to hold harmless the 
-aforementioned individual and or company, Foster Wrecker Service for any such damages that might occur in the course of attempting to gain entry to this 
-vehicle and or towing. This shall also apply to any employer that is represented as well as the manufacturer or distributor or the entry tools.
-<br><br>
-<p class="center xlarge"><strong>Tow Authorization Agreement</strong></p> <br>
-Whereas, indemnitee is engaging in the business of providing wrecker service, and or towing to the general public, and further that indemnitee has 
-various vehicles to provide these services to the public, and, whereas, indemnitor has need for indemnities' services and from time to time requests 
-that indemnitee conduct it's towing or wrecker service for indemnitor. Now, therefore, the parties hereto agree as follows: That indemnitee will provide 
-certain towing and wrecker services at the request of the indemnitor and that indemnitee will receive compensation for such services. That the undersigned 
-has contracted with the indemnitee to remove a vehicle that may be stolen, abandoned, and or lost or whose status is unknown on the undersigned premises. 
-That indemnitor agrees to indemnify and hold harmless from and against all claims, damages, losses, liabilities, judgments, costs, any and all loss, 
-attorney fees or any other expense of any nature arising to the towing and or storage of the vehicle at the request of indemnitor from any third parties 
-arising out of the failure of indemnitor or those acting under their authority to conform to the statues, ordinances, or other regulations or requirements 
-of any governmental authority, in connection with the wrecker service, towing, or removing or repossession of vehicles. Indemnitor agrees to defend and 
-all claims brought or actions filed against indemnitee with respect to the repossession, removal or towing of any vehicles requested by indemnitor to be 
-moved by indemnitee or others acting in their behalf and any other subject of this agreement, whether such claim or actions are rightfully or wrongfully 
-brought or filed. In case a claim should be brought or action filed against indemnitee, indemnitee shall incur no expenses, losses or liability.
-It is agreed by all parties hereto that the indemnitee has relied upon indemnitor's representation set out herein entering into this agreement and part 
-of the consideration charged by the indemnitee for future services rendered to the indemnitor are based on the representations set out herein.
-That the undersigned represents to Foster Wrecker Service that the undersigned has no knowledge of any alleged owner, and or has attempted to give due 
-process notice to any alleged owner or party having an interest therein. That the abandoned vehicle is blocking or impairing with success the use of 
-the property, is junk or causing other problems to the undersigned and needs to be removed.
-<br><br>
-<p class="center">(205) 854-4646
-<br> 28 22ND AVE NW 
-<br> CENTER POINT AL 35215
-<br> WWW.FOSTERWRECKER.COM
-</p>
-    </div>
+	  
+	  
+	  
+     By engaging the services of Foster Wrecker Service, you acknowledge and agree that we will exercise reasonable and customary 
+	 care when attempting to open your vehicle. It is important to understand that vehicle manufacturers design and construct their 
+	 vehicles to prevent unauthorized entry without a key. Consequently, there is a risk of potential damage to glass, rubber, paint, 
+	 wiring, locking mechanisms, or other components while attempting to gain entry without a key. 
+	You hereby release and indemnify Foster Wrecker Service, its agents, representatives, employees, and any associated employers from any 
+	liability or responsibility for any such damages that may occur during the process of attempting to gain entry to your vehicle or during 
+	towing. This release of liability extends to the vehicle's manufacturer, distributor, or any parties involved in providing entry tools. 
+	It is your sole responsibility to assume any risks associated with the attempted entry,
+	and you hold Foster Wrecker Service harmless from any claims, damages, or losses arising from such attempts.
+ 
+ <br><br>
+<p class="center xlarge"><strong>Impound aggrement</strong></p> <br>
+ 
+     This Agreement ("Agreement") is entered into between Foster Wrecker Service ("Indemnitee") and the undersigned party ("Indemnitor") for the provision of wrecker service and towing.
 
-    <p class="firebrick center bold xlarge">
-        "we're always on our tows!"
+WHEREAS, Indemnitee is engaged in the business of providing wrecker service and towing to the general public, and possesses various vehicles to facilitate these services; and
+
+WHEREAS, Indemnitor requires the services of Indemnitee and may request towing or wrecker service from time to time; and
+
+WHEREAS, the undersigned has contracted with Indemnitee to remove a vehicle that may be stolen, abandoned, lost, or of unknown status on the undersigned premises;
+
+NOW, THEREFORE, the parties agree as follows:
+<br>
+
+1. Indemnitee shall provide towing and wrecker services at the request of Indemnitor and shall be compensated for such services.
+<br>
+2. Indemnitor agrees to indemnify and hold Indemnitee harmless from any and all claims, damages, losses, liabilities, judgments, costs, expenses, including attorney fees, arising from towing and storage of the vehicle at the request of Indemnitor. This includes claims arising from the failure of Indemnitor or those acting under their authority to comply with statutes, ordinances, regulations, or requirements of any governmental authority in connection with wrecker service, towing, or vehicle repossession.
+<br>
+3. Indemnitor agrees to defend Indemnitee against any claims or actions brought or filed against them with respect to the repossession, removal, or towing of any vehicles requested by Indemnitor or on their behalf. This defense obligation applies regardless of the validity of such claims or actions. Indemnitee shall not incur any expenses, losses, or liabilities in relation to such claims or actions.
+<br>
+4. All parties agree that Indemnitee has relied upon the representations made by Indemnitor in entering into this Agreement. The consideration charged by Indemnitee for future services rendered to Indemnitor is based, in part, on the representations made herein.
+<br>
+5. The indemnitor has no knowledge of any alleged owner or has made reasonable attempts to provide due process notice to any alleged owner or party with an interest in the vehicle. The indemnitor further acknowledges that the abandoned vehicle is obstructing or impairing the use of the property, is deemed as junk, or causing other problems, necessitating its removal.
+<br>
+This Agreement sets forth the understanding and agreement between the parties and shall be binding upon them, their successors, assigns, and legal representatives.
+
+
     </p>
+    <a href="tel:205-854-4646" class="serif firebrick"><strong>Call us NOW!</strong></a>
+  </section>
 
-    
- <p align="center">
-		<img src="Wrecker Logo Small.png">  </p>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For immediate assistance or to schedule a tow, please contact us:</p>
+    <p>Phone: 205-854-4646</p>
+  </section>
+</main>
 
-    
-</div>
-
-</div> <!--end main-->
-</div> <!--end flex-container-->
-
-<div style="padding: 15px">
-</div>
-
-<div class="footer">
-        Copyright © 2020 Foster Wrecker Service LLC
-</div>
+<footer>
+  <p>&copy; 2023 Foster Wrecker Service. All rights reserved.</p>
+  <div class="footer-images">
+    <img src="Wrecker Logo1.png" alt="Image 1">
+    <img src="NTL_Logo.jpg" alt="Image 2">
+    <img src="Reviews.png" alt="Image 3">
+  </div>
+</footer>
 </body>
 </html>
