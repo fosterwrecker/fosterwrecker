@@ -1,202 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Foster Wrecker Service</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
-<style>
-body {
-  background-image: url("3-trucks.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0; /* Add padding to the body to avoid content touching the edges */
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Tow Truck Near Me - Foster Wrecker Service</title>
+    <meta name="description" content="Need a tow truck near you? Foster Wrecker Service provides fast, reliable towing and roadside assistance in Birmingham, Trussville, Center Point, and surrounding areas. Call 205-854-4646 for immediate help.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        body {
+            background-image: url("3-trucks.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; /* Add padding to the body to avoid content touching the edges */
+        }
 
-/* Adjust header styles for better mobile display */
-header {
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
-/* Adjust navigation styles for better mobile display */
-nav {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  overflow: auto; /* Add overflow property to enable horizontal scrolling for mobile navigation */
-}
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            overflow: auto; /* Add overflow property to enable horizontal scrolling for mobile navigation */
+        }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+        .nav {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.nav li {
-  padding: 10px;
-}
+        .nav li {
+            padding: 10px;
+        }
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
 
-.nav a:hover {
-  background-color: #555;
-}
+        .nav a:hover {
+            background-color: #555;
+        }
 
-/* Adjust hero section styles for better mobile display */
-#hero {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
-}
+        #hero {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+        }
 
-/* Adjust contact section styles for better mobile display */
-#contact {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px; /* Add margin-bottom to create space between sections */
-}
+        #contact {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px; /* Add margin-bottom to create space between sections */
+        }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  color: #bbb;
-  font-size: 14px;
-}
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: #bbb;
+            font-size: 14px;
+        }
 
-footer p {
-  margin: 0;
-}
+        footer p {
+            margin: 0;
+        }
 
-.footer-images {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+        .footer-images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-.footer-images img {
-  width: 100px;
-  margin: 0 10px;
-  opacity: 0.8;
-}
+        .footer-images img {
+            width: 100px;
+            margin: 0 10px;
+            opacity: 0.8;
+        }
 
-/* Add media query to adjust styles for smaller screens */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 24px; /* Decrease font size for better readability on smaller screens */
-  }
-  header h2 {
-    font-size: 18px; /* Decrease font size for better readability on smaller screens */
-  }
-  .nav {
-    overflow-x: auto; /* Enable horizontal scrolling for navigation on smaller screens */
-  }
-  .nav li {
-    white-space: nowrap; /* Prevent navigation items from wrapping on smaller screens */
-  }
-  .nav a {
-    padding: 10px 12px; /* Adjust padding for navigation links on smaller screens */
-  }
-  #hero h2 {
-    font-size: 18px; /* Decrease font size for better readability on smaller screens */
-  }
-  #hero p {
-    font-size: 14px; /* Decrease font size for better readability on smaller screens */
-  }
-}
-</style>
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px; /* Decrease font size for better readability on smaller screens */
+            }
+            header h2 {
+                font-size: 18px; /* Decrease font size for better readability on smaller screens */
+            }
+            .nav {
+                overflow-x: auto; /* Enable horizontal scrolling for navigation on smaller screens */
+            }
+            .nav li {
+                white-space: nowrap; /* Prevent navigation items from wrapping on smaller screens */
+            }
+            .nav a {
+                padding: 10px 12px; /* Adjust padding for navigation links on smaller screens */
+            }
+            #hero h2 {
+                font-size: 18px; /* Decrease font size for better readability on smaller screens */
+            }
+            #hero p {
+                font-size: 14px; /* Decrease font size for better readability on smaller screens */
+            }
+        }
+    </style>
+    <!-- Add Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Foster Wrecker Service",
+        "image": "https://www.fosterwrecker.com/logo.png",
+        "@id": "https://www.fosterwrecker.com/",
+        "url": "https://www.fosterwrecker.com/",
+        "telephone": "+12058544646",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4 22nd Ave NW",
+            "addressLocality": "Center Point",
+            "addressRegion": "AL",
+            "postalCode": "35215",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.6353,
+            "longitude": -86.6835
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "sameAs": [
+            "https://www.facebook.com/fosterwrecker",
+            "https://www.twitter.com/fosterwrecker",
+            "https://www.instagram.com/fosterwrecker"
+        ]
+    }
+    </script>
 </head>
 <body>
 <header>
-  <h1><span class="red-text">Foster Wrecker Service</span></h1>
-  <h2><span class="red-text">205-854-4646</span></h2>
-  <h3><span class="red-text"><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
+    <h1><span class="red-text">Foster Wrecker Service</span></h1>
+    <h2><span class="red-text">205-854-4646</span></h2>
+    <h3><span class="red-text"><a href="https://maps.google.com/?saddr=Current+Location&daddr=28+22ND+AVE+NW+CENTER+POINT+AL,+35215,+USA" 
              target="_blank" class="serif xlarge center firebrick">Click for Directions</a></span></h3>
-<nav>
-  <ul class="nav">
-   
-    <li><a href="mission_statement.html">Mission Statement</a></li>
-    <li><a href="services.html">Services</a></li> 
-    <li><a href="terms.html">Terms and Conditions</a></li>
-  </ul>
-</nav>
-
+    <nav>
+        <ul class="nav">
+            <li><a href="mission_statement.html">Mission Statement</a></li>
+            <li><a href="services.html">Services</a></li> 
+            <li><a href="terms.html">Terms and Conditions</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-  <section id="hero">
-    <h2> </h2>
-    <p>
-	<h4><span class="red-text"><a href="https://public.towbook.com/xJKR" 
+    <section id="hero">
+        <h2></h2>
+        <p>
+            <h4><span class="red-text"><a href="https://public.towbook.com/xJKR" 
              target="_blank" class="serif xlarge center firebrick" style="font-size: 48px;">Request a tow online</a></span></h4>
+            During vehicle emergencies, trust our expert team and state-of-the-art equipment to tow your car swiftly and skillfully. Whether you drive a compact car, an electric vehicle, or a truck, our professionals are fully equipped to handle a wide range of vehicles with efficiency and expertise. Our team provides reliable tow truck services in Birmingham, with decades of experience serving Birmingham and the surrounding metro area, is dedicated to providing exceptional towing services. We pride ourselves on our reputation for delivering top-quality assistance when you need it most.
+            <br><br>
+            Foster Wrecker Service is your trusted provider of comprehensive towing, roadside assistance, and wrecker services in Birmingham, Trussville, Center Point, and nearby areas. Our dedicated team is available to assist you locally or long distance, ensuring prompt and reliable support whenever and wherever you need it.
+            <br><br>
+            Visit our <a style="font-size: 32px;" href="services.html" class="serif firebrick"><strong>services</strong></a> page to explore our full range of solutions tailored to meet your specific needs. We handle each situation with efficiency and professionalism. Contact us immediately at 205-854-4646 for unparalleled services. Our friendly and knowledgeable staff are ready to provide the assistance you require. Trust Foster Wrecker Service for all your towing and roadside needs, and experience the difference of working with a true industry leader.
+        </p>
+        <a style="font-size: 32px;" href="tel:205-854-4646" class="serif firebrick"><strong>Call us NOW!</strong></a>
+        <img src="tow-truck.jpg" alt="">
+    </section>
 
-
-    <!--Roadside Connect - Survey Result Slideshow-->
-     
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/bundles/webcomponents-sd-ce-pf.js"></script>
-     
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.10/bundles/webcomponents-sd-ce-pf.js.map"></script>
-     
-    <script type="module" src="https://s3.amazonaws.com/cdn.roadside.io/roadside-survey.js"></script>
-     
-    <roadside-survey key="8e52ff90daab2b3746715fce6fa1ad57"></roadside-survey>
-
-
-
-
-	<br>
-      During vehicle emergencies, you can place your trust in our expert team and our state-of-the-art equipment to swiftly and skillfully tow your car with precision and care. 
-      Whether you drive a compact car, an electric vehicle, or a truck, our skilled professionals are fully equipped to handle a wide range of vehicle types with efficiency 
-      and expertise. Rest assured that our reliable team, with decades of experience serving Birmingham and the surrounding metro area, is dedicated to providing exceptional 
-      towing services. We take great pride in our long-standing reputation for delivering top-quality assistance when you need it most.
-      <br><br>
-      Foster Wrecker Service is your trusted provider of comprehensive towing, roadside assistance, and wrecker services in Birmingham, Trussville, Center Point, 
-      and the neighboring areas. Our dedicated team is available to assist you both locally or long distance, ensuring that you receive prompt and reliable 
-      support whenever and wherever you need it. 
-	  
-      Visit our <a Style="font-size: 32px;"href="services.html" class="serif firebrick"><strong>services</strong></a> 
-      page to explore the full range of solutions we offer, tailored to meet your specific needs. 
-	  
-      We are equipped to handle the situation with efficiency and professionalism. Rest assured, our commitment to excellence ensures that you receive top-notch 
-      service from start to finish. Don't hesitate to contact us immediately at 205-854-4646 to access our unparalleled services. Our friendly and knowledgeable 
-      staff are ready to provide you with the assistance you require. Trust Foster Wrecker Service for all your towing and roadside needs, and experience the 
-      difference of working with a true industry leader.
-    </p>
-    <a Style="font-size: 32px;" href="tel:205-854-4646" class="serif firebrick"><strong>Call us NOW!</strong></a>
-  </section>
-  
- 
-
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>For immediate assistance or to schedule a tow, please contact us:</p>
-    <p>Phone: 205-854-4646</p>
-  </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>To find a "Tow truck near me" or to schedule a tow, please contact us:</p>
+        <p>Phone: 205-854-4646</p>
+    </section>
 </main>
 
 <footer>
-  <p>&copy; 2023 Foster Wrecker Service. All rights reserved.</p>
-  <div class="footer-images">
-    <img src="Wrecker Logo1.png" alt="Image 1">
-    <img src="NTL_Logo.jpg" alt="Image 2">
-    <img src="Reviews.png" alt="Image 3">
-  </div>
+    <p>&copy; 2024 Foster Wrecker Service. All rights reserved.</p>
+    <div class="footer-images">
+        <img src="Wrecker Logo1.png" alt="Tow truck service logo">
+        <img src="NTL_Logo.jpg" alt="National Towing Logo">
+        <img src="Reviews.png" alt="Customer Reviews">
+    </div>
 </footer>
 </body>
+
 </html>
+
